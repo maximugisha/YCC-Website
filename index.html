@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>youthcodecommunity</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content=" Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+
+<script src="js/responsiveslides.min.js"></script>
+	<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+  <!---->
+  <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+			    event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+</script>
+
+
+</head>
+
+<body> 
+<!--header-->
+<!--banner-->
+<div class="banner" id="home">
+	<div class="slider" >
+	    <div class="callbacks_container">
+	      <ul class="rslides" id="slider">
+	        <li>
+	          <img src="images/banner10.jpg" alt="">
+			  <div class="banner-matter">
+			  <img class="img-responsive"  src="images/nurtur.png" alt=" " />
+			 
+			  </div>
+	        </li>
+	        <li>
+	          <img src="images/banner40.jpg" alt=""> 
+			<div class="banner-matter">
+				<img  class="img-responsive" src="images/nurtur.png" alt=" " />
+			  
+			  </div>			  
+	        </li>
+	        <li>
+	          <img src="images/banner50.jpg" alt="">
+				<div class="banner-matter">
+				<img class="img-responsive" src="images/nurtur.png" alt=" " />
+			  
+			  </div>
+	        </li>
+                
+	      </ul>
+	  </div>
+	  </div>
+	  </div>
+	<!---->
+	<div class="header" >
+			<div class="container">
+			<div class="fixed-header">
+
+			<div class="logo">
+			     <a href="index.html"><img src="images/logo.png" alt=" " /></a>
+			</div>
+			
+				<div class="top-nav cssmenu">
+				<nav class="nav clearfix">
+					<a id="menu-toggle" class="anchor-link"><img src="images/menu.png" alt="" /></a>
+					<ul class="simple-toggle" id="nav">
+			        	<li class="current"><a href="#home" class="scroll">Home</a></li>		        	
+			        	<li ><a href="#services" class="scroll"> Services</a></li>
+						<li ><a href="#about" class="scroll">About</a></li>
+			        	<li><a href="#work" class="scroll">Projects</a></li>
+			        	<li><a href="#contact" class="scroll">Contact</a></li>
+			        </ul>
+				</nav>
+				
+				<script type="text/javascript">
+					  $(document).ready(function() {
+					
+						$('#menu-toggle').click(function () {
+					      $('#nav').toggleClass('open');
+					      e.preventDefault();
+					    });
+					    
+					});
+				</script>
+				<!---->
+				<script src="js/jquery.nav.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#nav').onePageNav({
+			begin: function() {
+			console.log('start')
+			},
+			end: function() {
+			console.log('stop')
+			}
+		});
+	});
+	</script>
+				
+				</div>
+				<div class="clearfix"> </div>
+				</div>
+		</div>
+	</div>
+	
+		<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header").addClass("fixed");
+				}else{
+					$(".header").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+		<!-- /script-for sticky-nav -->
+
+<!--content-->
+	<div class="content">
+	<!---->
+		<div class="services" id="services">
+			<div class="container">
+				<div class="service-head">
+	<h3>OUR SERVICES</h3>
+        <span> We offer a number of <b>services</b> some of which include the foolowing:</span>
+	<p>We offer these services at a much reasonable cost and we invite people especially the youth to come
+	   and join us. Our doors are open and always ready to offer help to who need it</p>
+		</div>
+		<div class=" services-grid">
+		<div class="col-md-4 service-grid">
+		<a href="#"><img class="img-responsive" src="images/s1.png" alt=" " /></a>
+	<h5>RESEARCH</h5>
+	<p>We offer research services in the field of technology as well as design and embedded systems.</p>
+		</div>
+		<div class="col-md-4 service-grid">
+		<a href="#"><img class="img-responsive" src="images/s2.png" alt=" " /></a>
+	<h5>DESIGN</h5>
+	<p>We design a number of things ranging from simpe business cards to website layouts.</p>
+		</div>
+		<div class="col-md-4 service-grid">
+		<a href="#"><img class="img-responsive" src="images/s3.png" alt=" " /></a>
+	<h5>DEVELOPMENT</h5>
+	<p>We also develop softwares and websites as well as embedded systems.</p>
+		</div>
+		<div class="col-md-4 service-grid ">
+		<a href="#"><img class="img-responsive" src="images/s4.png" alt=" " /></a>
+	<h5>LAUNCH</h5>
+	<p>We also help in the launching of applications as well as websites to the web.</p>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+		</div>
+		</div>
+		<!---->
+		<div class="team" id="about">
+			<div class="container">
+				<div class="team-head">
+	<h3>Who we are & what we do</h3>
+	<p>Find out about us.</p>
+	<a href="#" class="meet">Meet the team<span> </span></a>
+	</div>
+	<div class=" team-top">
+		<div class="col-md-4 team-top-grid">
+		<div class="team-grid">
+			<a href="#"><label> </label></a>
+			<h6>Maximo M</h6>
+			<small>President</small>
+			<ul class="social">
+			<li class="facebook"><a href="#"><span> </span> </a></li>
+			<li class="twitter"><a href="#"><span> </span> </a></li>
+			<li class="gmail"><a href="#"><span> </span> </a></li>
+			<li class="inline"><a href="#"><span> </span> </a></li>
+			</ul>
+
+		</div>
+		</div>
+		<div class=" col-md-4 team-top-grid">
+		<div class="team-grid">
+		<a href="#"><label> </label></a>
+			<h6>Tiba Joel</h6>
+			<small>Admin/Coder</small>
+			<ul class="social">
+			<li class="facebook"><a href="#"><span> </span> </a></li>
+			<li class="twitter"><a href="#"><span> </span> </a></li>
+			<li class="gmail"><a href="#"><span> </span> </a></li>
+			<li class="inline"><a href="#"><span> </span> </a></li>
+			</ul>
+					
+		</div>
+		</div>
+		<div class="col-md-4 team-top-grid">
+		<div class="team-grid">
+		<a href="#"><label> </label></a>
+			<h6>Claire N</h6>
+			<small>Vice Prez</small>
+			<ul class="social">
+			<li class="facebook"><a href="#"><span> </span> </a></li>
+			<li class="twitter"><a href="#"><span> </span> </a></li>
+			<li class="gmail"><a href="#"><span> </span> </a></li>
+			<li class="inline"><a href="#"><span> </span> </a></li>
+			</ul>
+					
+		</div>
+		</div>
+		<div class="col-md-4 team-top-grid  ">
+		<div class="team-grid">
+		<a href="#"><label> </label></a>
+			<h6>Sheldon O</h6>
+			<small>Developer</small>
+			<ul class="social">
+			<li class="facebook"><a href="#"><span> </span> </a></li>
+			<li class="twitter"><a href="#"><span> </span> </a></li>
+			<li class="gmail"><a href="#"><span> </span> </a></li>
+			<li class="inline"><a href="#"><span> </span> </a></li>
+			</ul>
+					
+		</div>
+						
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+		</div>
+	</div>
+		<!---->
+		<div class="work" id="work">
+			<div class="container">
+				<div class="work-head">
+			<h3>our work</h3>
+			<p>This is some of the work we have been working on. </p>					
+			</div>
+			<div class=" work-top">					
+			<div class="by-type">
+			<h6>PORTFOLIO</h6>
+			</div>
+			<ul id="filters">
+			<li><span class="filter " data-filter="app card icon web">All</span></li>
+			<li><span class="filter" data-filter="app card icon web">Designs</span></li>
+			<li><span class="filter" data-filter="card"> Logo designs</span></li>
+			<li><span class="filter" data-filter="icon">Web design</span></li>
+		        </ul>
+		        <div class="clearfix"> </div>
+			</div>
+			<div id="portfoliolist">
+			<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+			<div class="portfolio-wrapper ">		
+			<a href="images/image2.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+			<img class="img-responsive" src="images/image1.jpg" alt=""  /> 
+			<span class="arrow"> </span>
+			<div class="simple">						    	
+			<label> </label>
+			  </div>		
+			</a>	
+			<p>image</p>													
+			</div>
+			</div>				
+			<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+			<div class="portfolio-wrapper">		
+			<a href="images/image3.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+			 <img class="img-responsive" src="images/image3.jpg" alt=""  />
+			 <span class="arrow"> </span>
+			 <div class="simple">						    	
+			<label> </label>
+			</div>		
+			</a>	
+			<p>iamge</p>
+		                </div>
+			</div>		
+			<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+			<div class="portfolio-wrapper">		
+			<a href="images/image4.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+			<img class="img-responsive" src="images/image4.jpg"  alt="" />
+			 <span class="arrow"> </span>
+			 <div class="simple">						    	
+			<label> </label>
+			 </div>		
+			</a>	
+			<p>iamge</p>
+		                </div>
+			</div>				
+			<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+			<div class="portfolio-wrapper ">		
+			<a href="images/image5.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+			 <img class="img-responsive" src="images/image5.jpg" alt=""  />
+			 <span class="arrow"> </span>
+			<div class="simple">						    	
+			<label> </label>
+			 </div>		
+			</a>	
+			  <p>iamge</p>	
+		              </div>
+			</div>	
+			<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+			<div class="portfolio-wrapper ">		
+			<a href="images/p5.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+			    <img class="img-responsive" src="images/p5.jpg" alt=""  />
+			<span class="arrow"> </span>
+		        <div class="simple">						    	
+			<label> </label>
+			</div>		
+			</a>	
+			<p>image</p>	
+		         </div>
+			</div>			
+			<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+			<div class="portfolio-wrapper">		
+			<a href="images/p6.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+			<img class="img-responsive" src="images/p6.jpg" alt=""  />
+						     
+			 <span class="arrow"> </span>
+			<div class="simple">						    	
+			<label> </label>
+			</div>		
+			</a>	
+			<p>image</p>
+		                </div>
+			</div>
+			<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+			<div class="portfolio-wrapper">		
+			<a href="images/p7.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+			 <img class="img-responsive" src="images/p7.jpg" alt=""  />
+			 <span class="arrow"> </span>
+			 <div class="simple">						    	
+			<label> </label>
+			 </div>		
+			</a>	
+			  <p>image</p>
+		               </div>
+			</div>
+			<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+			<div class="portfolio-wrapper">		
+			<a href="images/p1.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+			 <img class="img-responsive" src="images/p1.jpg" alt=""  />
+			 <span class="arrow"> </span>
+			 <div class="simple">						    	
+			<label> </label>
+			</div>		
+			</a>	
+			<p>image</p>
+		         </div>
+			</div>
+			<div class="clearfix"> </div>
+			</div>	
+			<!-- Script for gallery Here -->
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+						
+				var filterList = {
+						
+			init: function () {
+							
+		// MixItUp plugin
+		// http://mixitup.io
+		$('#portfoliolist').mixitup({
+			targetSelector: '.portfolio',
+			filterSelector: '.filter',
+			effects: ['fade'],
+			easing: 'snap',
+
+		// call the hover effect
+			onMixEnd: filterList.hoverEffect()
+					});				
+							
+				},
+							
+			hoverEffect: function () {
+							
+		// Simple parallax effect
+			$('#portfoliolist .portfolio').hover(
+				function () {
+			$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+			$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+				function () {
+				$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+				$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+						}		
+				);				
+							
+				}
+				
+				};
+						
+		// Run the show!
+			filterList.init();
+			});	
+		</script>
+			<!-- Gallery Script Ends -->
+			</div>
+		</div>
+		<!---->
+	<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+		</script>
+
+	<!---->
+
+		<!---->
+		<div class="contact" id="contact">
+			<div class="container">
+				<div class="contact-head">
+		<h3>CONTACT US</h3>
+		<p>Talk to us and let us know what you think of our services. Any question or complaints are highly welcome.</p>					
+		</div>
+		<div class="contact-bottom">
+		<div class="col-md-3 sit-contact">
+		<h5>Address</h5>
+		<div class="contact-add">
+			<ul>
+			<li><span>YCC</span></li>
+			<li>Sir Apollo Kagwa road</li>
+			<li>CEDAT Makerere Kampala</li>
+		        <li>Kampala Uganda</li>	
+			</ul>
+			</div>
+			<div class="contact-in">
+			<ul class="phone">
+			<li>Phone:  <span></span></li>
+			<li>Fax:  <span></span></li>
+			<li>E-mail:  <a href="youthcodecommunity@gmail.com">youthcodecommunity</a></li>
+			<li>Skype:  <span>YCC</span></li>	
+			</ul>							
+		        </div>
+						
+		 </div>
+		<div class="col-md-3">
+<!--		<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29266055.398148097!2d133.28132295!3d-26.43907425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sin!4v1414839600665"></iframe>
+-->
+		</div>						
+		</div>
+		<div class="col-md-6 contact-into">
+		<h5>Ask a question</h5>
+		<form>
+		<div class="contact-grid">
+		<div class="col-md-6 contact-us">
+		<input type="text" value="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Name';}">
+			</div>
+			<div class="col-md-6 contact-us">
+		<input type="text" value="Email" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Email';}">
+			</div>
+			<div class="clearfix"> </div>
+			</div>
+	       <textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+			<div class="send ">
+	        <input type="submit" value="SEND" >
+			</div>
+			</form>
+
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+
+		</div>
+		</div>
+	</div>	
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+				<ul class="social-icons">
+					<li><a href="#"><span> </span> </a></li>
+					<li class="twitter"><a href="#"><span> </span></a></li>
+					<li class="gmail"><a href="youthcodecommunity@gmail.com"><span> </span> </a></li>
+					<li class="print"><a href="#"><span> </span> </a></li>
+				</ul>
+	<p class="footer-class">Copyright &copy; 2017 Youth Code Community  </p>
+		</div>	
+		  <script type="text/javascript">
+			$(document).ready(function() {
+				/*
+			var defaults = {
+			       containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+					 };
+				*/
+							
+			       $().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+		</script>
+
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+		</div>
+
+</body>
+</html>
